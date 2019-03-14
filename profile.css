@@ -1,0 +1,450 @@
+body {
+background: black;
+
+background-size: cover;
+background-position: right;
+  background-repeat: no-repeat;
+
+
+}
+
+#parent_section{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+#left_section{
+  display: flex;
+  flex-direction: column;
+  height: 40vw;
+    width: 28vw;
+    background: black;
+
+}
+
+#my_photo{
+height: 27vw;
+  background: url(BlackMoh.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+#Moh{
+  font-size: 1.25vw;
+}
+
+
+#right_setion{
+  background: url(laptop1.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+
+
+  position: relative;
+
+  height: 48vw;
+  width: 70vw;
+
+}
+
+#options{
+  font-size: 4vw;
+
+  font-family:cursive;
+  text-align: center;
+  overflow: hidden;
+
+
+}
+
+
+#new_option a{
+  font-size: 2.5vw;
+  margin: 1vw;
+  color:floralwhite;
+  display: none;
+
+  transition: all 2s linear;
+
+}
+
+
+
+span{
+  color:white;
+  font-size: 4vw;
+  align-items: center;
+  cursor:pointer;
+  list-style-type: none;
+  list-style: none;
+  height:4vw;
+
+
+
+}
+
+span:hover{
+  color:darkred;
+
+}
+
+#for_options{
+
+  opacity: 0;
+  width: 25vw;
+  background: rgb(0,0,0,0.7);
+
+  display:flex;
+
+  align-items: center;
+ flex-direction:row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+ margin-left: 12.5vw;
+ margin-top: 11.9vw;
+}
+
+#for_options a {
+cursor: pointer;
+padding: 1vw;
+
+  padding: 2vw;
+  bottom: 1px;
+  opacity: 1;
+  display: none;
+  font-family: 'Boogaloo', cursive;
+  color:lightblue;
+  font-size: 2.5vw;
+  transition: color 0.4s linear;
+
+
+
+}
+
+#for_options a:hover{
+  color:darkred;
+
+}
+
+
+
+
+.scroll-up {
+ height: 10vw;
+ overflow: hidden;
+ position: relative;
+ background: black;
+ color: orange;
+
+}
+.scroll-up p {
+  font-family: 'Bangers', cursive;
+ position: absolute;
+ width: 100%;
+ color:gray;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ font-size: 1.8vw;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);
+ transform:translateY(100%);
+ /* Apply animation to this element */
+ -moz-animation: scroll-up 40s linear infinite;
+ -webkit-animation: scroll-up 40s linear infinite;
+ animation: scroll-up 40s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+
+
+
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   {
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%);
+ }
+ 100% {
+ -moz-transform: translateY(-500%); /* Browser bug fix */
+ -webkit-transform: translateY(-500%); /* Browser bug fix */
+ transform: translateY(-500%);
+ }
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .2px solid gray; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+   /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  margin-bottom: 1vw;                         /* Adjust as needed */
+  animation:
+    typing 4s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow }
+}
+
+
+#aboutme_container{
+
+background:antiquewhite;
+position: absolute;
+right: 0.1vw;
+height: 45vw;
+width: 100vw;
+top:1vw;
+display: none;
+
+
+
+}
+
+#close_aboutme{
+  color:black;
+  top:1px;
+  position: absolute;
+  right:1px;
+  font-size: 2vw;
+}
+
+
+#skills_parent{
+
+  height: 45vw;
+  width:100%;
+  display: none;
+
+  position:absolute;
+
+
+  top:0vw;
+}
+#skills_container{
+
+
+  height: 25vw;
+  width: 100%;
+  background:rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+
+#skills_container div{
+  display: flex;
+  flex-direction: row;
+
+}
+#skills_container div p{
+color:white;
+margin-top: 1px;
+  font-weight: bold;
+  width: 1px;
+  font-size: 1.6vw;
+  position: absolute;
+
+}
+#div1 progress[value] {
+-webkit-appearance: none;
+ appearance: none;
+
+width: 30vw;;
+height: 2.5vw;
+margin-bottom: 3vw;
+margin-left: 5vw;
+}
+
+#div1  progress::-webkit-progress-value {
+  background:#340A0D;
+
+ }
+#div2 progress[value] {
+  -webkit-appearance: none;
+   appearance: none;
+
+ width: 30vw;;
+ height: 2.5vw;
+ margin-bottom: 3vw;
+ margin-left: 5vw;
+
+}
+#div2  progress::-webkit-progress-value {
+ background: #340A0D;
+
+}
+#div3  progress[value] {
+-webkit-appearance: none;
+ appearance:none;
+
+width: 30vw;
+height: 2.5vw;
+margin-bottom: 3vw;
+margin-left: 5vw;
+
+
+
+}
+#div3  progress::-webkit-progress-value {
+background: #340A0D;
+
+
+}
+ #div4 progress[value] {
+-webkit-appearance: none;
+ appearance: none;
+
+width: 30vw;;
+height: 2.5vw;
+margin-bottom: 3vw;
+margin-left: 5vw;
+
+}
+#div4 progress::-webkit-progress-value {
+background: #340A0D;
+
+}
+
+
+
+
+
+
+
+
+
+#clossing{
+  color:white;
+top:1px;
+  position: absolute;
+  right:1px;
+  font-size: 2vw;
+}
+
+#projects_contanier{
+  background: red;
+  height: 10vw;
+  width: 10vw;
+  position: absolute;
+  top:0;
+  right:0;
+  display: none;
+}
+#close_projects{
+  color:white;
+  top:1px;
+  position: absolute;
+  right:5px;
+  bottom: 0;
+
+  font-size: 2vw;
+}
+.classsss{
+  display: block;
+}
+
+#contact_container{
+  width: 100%;
+  height: 2vw;
+  /* display: none; */
+  background:url(back1.jpg);
+
+  background-repeat: no-repeat;
+
+
+  position: absolute;
+  bottom:5px;
+  opacity: 0;
+
+}
+
+#close_contact{
+  color:white;
+  top:1px;
+  position: absolute;
+  right:5px;
+  bottom: 0;
+
+  font-size: 2vw;
+}
+
+#contact_container > h1{
+  text-align: left;
+  width: 0vw;
+  opacity: 0;
+  font-size:3.5vw;
+  border-bottom: 1px solid red;
+
+  font-family: 'Permanent Marker', cursive;
+font-family: 'Cookie', cursive;
+}
+
+label{
+  font-size: 1.2vw ;
+  font-weight: bold;
+}
+textarea{
+  background: red;
+}
+#black_box{
+  height: 5vw;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+
+  flex-direction: row;
+}
+address b{
+  color:white;
+}
+#icons_container{
+
+
+box-shadow: 2px 2px 5px 5px brown;
+
+  width: 20vw;
+margin-left: 36vw;
+
+display: flex;
+justify-content: space-around;
+
+}
+
+i{
+  cursor: pointer;
+
+font-size: 2.5vw;
+margin-top: 1vw;
+color: white;
+
+}
